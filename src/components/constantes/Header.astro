@@ -35,16 +35,21 @@ import Redes from './Redes.astro'
   }
 </style>
 <script>
-  const pathnames = document.querySelectorAll('.pth')
-  pathnames.forEach(url =>{
-    if(url.pathname === location.pathname){
-      url.classList.add('text-[yellow]')
-    }
-  })
-  const menu=document.getElementById('menu')
-  menu?.addEventListener('click',navMobile)
-  function navMobile(){
-    document.getElementById('navMobile')?.classList.toggle('translate-y-[-100dvh]')
-    document.getElementById('navMobile')?.classList.toggle('opacity-0')
+ const pathnames = document.querySelectorAll<HTMLAnchorElement>('.pth');
+pathnames.forEach((url) => {
+  if (url.pathname === location.pathname) {
+    console.dir(url); 
+    url.classList.add('text-[yellow]'); 
   }
+});
+
+const menu = document.getElementById('menu'); 
+menu?.addEventListener('click', navMobile);
+
+function navMobile(): void {
+  const navMobile = document.getElementById('navMobile'); 
+  navMobile?.classList.toggle('translate-y-[-100dvh]');
+  navMobile?.classList.toggle('opacity-0');
+}
+
 </script>
