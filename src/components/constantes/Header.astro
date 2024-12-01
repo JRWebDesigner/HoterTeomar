@@ -36,9 +36,9 @@ import Redes from './Redes.astro'
 </style>
 <script>
   const pathnames = document.querySelectorAll('.pth')
-  pathnames.forEach(pathname =>{
-    if(pathname.pathname===location.pathname){
-      pathname.classList.add('text-[yellow]')
+  pathnames.forEach(url =>{
+    if(url.pathname === location.pathname){
+      url.classList.add('text-[yellow]')
     }
   })
   const menu=document.getElementById('menu')
