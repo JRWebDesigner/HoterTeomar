@@ -1,11 +1,48 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Banner from '../components/home/Banner.astro'
 ---
-
-<Layout>
-	<Welcome />
+<Layout title="Hotel Teomar">
+	<Banner />	
+	<section class="flex justify-around items-center flex-wrap">
+		<div class="w-[60%] my-10 mx-auto  grid place-items-center">
+			<h2 class="font-semibold text-xl md:text-3xl text-center">¿Buscas el lugar ideal para hospedarte en Caranavi, La Paz? Bienvenido al Hotel Teomar, donde la comodidad, la naturaleza y la hospitalidad se unen para ofrecerte una experiencia inolvidable.</h2>
+			<a href="https://maps.app.goo.gl/yFAEZmBMMVkLzP8cA" target="_blank" class="px-10 md:px-24 py-3 bg-[#53ff1e] rounded-3xl text-[#000] font-bold shadow-xl hover:scale-110 duration-100 mt-10">UBICACIÓN</a>
+		</div>
+		<div class="carouselBasic mx-auto w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-cover bg-center md:my-10 rounded-full">
+ 		</div>
+	</section>
+	<div class="w-full bg-[#ff8615] text-center text-white font-semibold text-lg md:text-2xl my-6">
+		<span>Haz tu reserva hoy mismo ¡Te esperamos para vivir momentos inolvidables en el Hotel Teomar!</span>
+	</div>	
+	<div class="relative bg-[url('/images/fondo.webp')] bg-fixed text-[#fff] flex justify-center items-center p-8">
+		<div class="absolute bg-black w-full h-full opacity-60 z-0"></div>
+		
+	</div>
 </Layout>
+<style>
+	.list{
+		background-image: url('/images/fondo.webp');
+		background-attachment: fixed;
+	}
+	.carouselBasic{
+		animation: infinite 30s linear carousel;
+	}
+	@keyframes carousel {
+		0%{
+			background-image: url('/images/img1.jpg');
+		}
+		33.3%{
+			background-image: url('/images/img2.jpg');
+		}
+		66.6%{
+			background-image: url('/images/img3.jpg');
+		}
+		100%{
+			background-image: url('/images/img4.jpg');
+		}
+	}
+	ul{
+		list-style: disc;
+	}
+</style>
