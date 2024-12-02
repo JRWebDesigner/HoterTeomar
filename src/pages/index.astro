@@ -12,11 +12,27 @@ import Banner from '../components/home/Banner.astro'
 		<div class="carouselBasic mx-auto w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-cover bg-center md:my-10 rounded-full">
  		</div>
 	</section>
-	<div class="w-full bg-[#ff8615] text-center text-white font-semibold text-lg md:text-2xl my-6">
+	<div class="w-full bg-[#ff8615] text-center text-white font-semibold text-lg md:text-2xl mt-6">
 		<span>Haz tu reserva hoy mismo ¡Te esperamos para vivir momentos inolvidables en el Hotel Teomar!</span>
 	</div>	
-	<div class="relative bg-[url('/images/fondo.webp')] bg-fixed text-[#fff] flex justify-center items-center p-8">
+	<div class="relative bg-[url('/images/fondo.webp')] bg-cover bg-fixed text-[#fff] flex justify-center items-center p-8">
 		<div class="absolute bg-black w-full h-full opacity-60 z-0"></div>
+		<div class="z-10 py-10 w-full">
+			<h2 class="font-bold text-2xl md:text-4xl text-center text-white uppercase">
+				¿Por qué elegirnos?
+			</h2>
+			<ul class="flex justify-around items-center gap-10 mt-10 font-bold text-xl">
+				<li class="bg-[#ffe15c] text-black w-[260px] h-[340px] rounded-3xl flex justify-center items-center text-center p-3">
+					Ubicación estratégica en Caranavi: Estamos en el centro de Caranavi, cerca de cascadas, rutas ecológicas y cafeterías locales.	
+				</li>
+				<li class="bg-[#28A745] w-[260px] h-[360px] rounded-3xl flex justify-center items-center text-center text-black p-3">
+					Ambiente acogedor: Un ambiente familiar que te hará sentir como en casa mientras exploras la capital cafetalera de Bolivia.
+				</li>
+				<li class="bg-[#ffe15c] text-black w-[260px] h-[340px] rounded-3xl flex justify-center items-center text-center p-3">
+					Habitaciones confortables: Habitaciones modernas y equipadas con todas las comodidades para tu descanso.
+				</li>
+			</ul>
+		</div>
 	</div>
 </Layout>
 <style>
