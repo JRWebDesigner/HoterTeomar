@@ -2,4 +2,53 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Hotel Teomar | Actividades">
+    <section class="relative h-[60dvh] w-full bg-cover bg-[url('/images/banner.webp')] bg-fixed bg-center flex justify-center items-center flex-col">
+        <div class="absolute bg-black w-full h-full opacity-50"></div>
+        <h1 class="text-white z-10 text-3xl md:text-5xl w-1/2 text-center font-bold"><span class="text-[#50ff0b]">Actividades</span> Vive experiencias únicas en Caranavi
+        </h1>
+        <a href="https://wa.link/t7lgw0" target="_blank" class="absolute bottom-7 px-10 md:px-24 py-3 bg-[#fff01e] rounded-3xl text-[#17350b] font-bold shadow-xl hover:scale-110 duration-100">Reserva Ahora</a>
+    </section>
+    <section class="container mx-auto py-10 w-[70%]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+            <!-- Actividad 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src="https://caranaviparaiso.wordpress.com/wp-content/uploads/2015/06/descarga-14.jpg" alt="Cascada" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-green-800">Excursión a Cascadas</h2>
+                    <p class="mt-2 text-gray-600">Descubre las impresionantes cascadas de Caranavi y disfruta de un día rodeado de naturaleza.</p>
+                </div>
+            </div>
+            <!-- Actividad 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQudTKdNqAWADc6bg4ZCFuz0yYhLUy394rXJA&s" alt="Degustación de café" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-green-800">Degustación de Café</h2>
+                    <p class="mt-2 text-gray-600">Prueba los mejores cafés locales en las cafeterías cercanas y aprende sobre su proceso de cultivo.</p>
+                </div>
+            </div>
+            <!-- Actividad 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src="https://sitservicios.lapaz.bo/biodiversidad/capitulo-3-fauna/images/000042.jpg" alt="Observación de aves" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-green-800">Observación de Aves</h2>
+                    <p class="mt-2 text-gray-600">Explora los miradores y observa las especies exóticas que habitan en la región.</p>
+                </div>
+            </div>
+            <!-- Actividad 6 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                <img src="/images/img4.jpg" alt="Relajación en la piscina" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-green-800">Relajación en la Piscina</h2>
+                    <p class="mt-2 text-gray-600">Disfruta de un momento refrescante en nuestra piscina mientras contemplas el paisaje.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón de llamada a la acción -->
+        <div class="mt-10 text-center">
+            <a href="contacto.html" class="bg-yellow-500 text-white py-3 px-6 rounded-lg text-lg shadow-lg hover:bg-yellow-600 transition">
+                Reserva tu Aventura
+            </a>
+        </div>
+    </section>
 </Layout>

@@ -1,0 +1,37 @@
+---
+import Logo from '../../assets/logo.png'
+import Redes from './Redes.astro'
+---
+<footer class="relative z-40 bg-black p-6 flex justify-center items-center text-white flex-col">
+    <div class="flex justify-center items-center flex-wrap gap-10">
+        <div class="flex flex-col items-center">
+            <img width="200px" src={Logo.src} alt="Logo hotel teomar">
+            <Redes/>
+        </div>
+        <div>
+            <h3 class="text-center text-xl font-bold">Contactos</h3> 
+            <ul>
+                <li>
+                   <a href="https://maps.app.goo.gl/yFAEZmBMMVkLzP8cA"><strong>Dirección: </strong> Calle Final Cobija, detrás de la terminal de buses <br> , Caranavi, Bolivia</a>
+                </li>
+                <li>
+                    <a href="https://wa.link/t7lgw0">
+                        <strong>Celular:</strong> +591 76294851
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:teomarhoter@gmail.com">
+                        <strong>Email:</strong> teomarhotel@gmail.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <span class="text-center">
+    <strong>"Un lugar para compartir con la Familia o entre amigos" </strong><br>
+    Hotel Teomar
+        </span>
+    </div>
+    <small>
+        © 2024 Hotel Teomar. Todos los derechos reservados.
+    </small>
+</footer>
